@@ -11,16 +11,30 @@ Input is currently very limited, only a few keys are currently defined:
 {"mv_extra2",  KEY_LEFT_CONTROL}
 ```
 
+the right side shows the internal names used by raylib, the left side is the name of they key used by 
+```js
+isKeyDown();
+```
+and
+```js
+isKeyPressed();
+```
+
+
 Aside from that, there are mouse/cursor related functions
 
-getMouseX
-getMouseY
+```js
+getMouseX();//Mouse X position
+getMouseY();//Mouse Y position
 
-mouseLeftClicked
-MouseLeftDown
+mouseLeftClicked();//Mouse just left pressed
+MouseLeftDown();//Mouse button down
 
-getMouseDeltaX
-getMouseDeltaY
+getMouseDeltaX();//relative mouse movement between frames (X)
+getMouseDeltaY();//relative mouse movement between frames (Y)
 
-captureCursor
-freeCursor
+captureCursor();//Capture the cursor, hidden and locked into the game window
+freeCursor();//release cursor
+```
+
+
