@@ -39,3 +39,6 @@ A keybind config file.
 Ability to read text files/json files/save data.
 
 A Launcher 
+
+
+making it fully open source ... once the code is not emberassingly bad.
