@@ -1,4 +1,4 @@
-In the root folder of the game, I file named "game.js" can be found, which defines the main scene-tree, meaning it contains the game objects and defines their parent objects.
+In the root folder of the game, a file named "game.js" can be found, which defines the main scene-tree, meaning it contains the game objects and defines their parent objects.
 
 There is a folder for every type of resource and the runtime will only look in the logical places. So that instead of full or relative paths, only filepaths to resouces shold be provided.
 game
@@ -6,6 +6,7 @@ game
    -> models: models/models with animations
    -> scrips: javascript script files
    -> shaders: Vertex and fragment shaders
+
 
 # Definitions
 
@@ -27,9 +28,12 @@ setModel("aGameObject", "modelFile.glb");
 **Importand definitions**
 the "root" game object is always defined by default and everything must be able to be traced back to it. 
 
-The camera must be given to a game object, this is done using `giveCamera("aGameObject")`.
-A target for the camera to look at must also be provided using `
+The camera must be given to a game object, this is done using 
+```js
+giveCamera("aGameObject")`
+```
 
+A target for the camera to look at must also be provided using 
 
 ```js 
 camTarget("targetGameObject");
@@ -43,4 +47,5 @@ All game objects must have a parent except for the "root" game object. Syntax to
 ```js
 addObject("gameObjectName", "parentObjectName");
 ```
+
 
